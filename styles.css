@@ -1,0 +1,129 @@
+p {
+  max-width: 40ch;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  margin: auto;
+}
+
+.card-header.card-image>img {
+  display: block;
+  width: 100%;
+  max-height: 300px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  transition: 300ms transform ease-in-out;
+}
+
+.card:hover>.card-header.card-image>img {
+  transform: scale(1.5);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.card {
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  background: #7B6D8D;
+  --padding: 1rem;
+  overflow: hidden;
+  max-width: 400px;
+  min-width: none;
+  border-radius: .25rem;
+  border: none;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .6)
+}
+
+.card-header {
+  padding: 0;
+  padding-bottom: 0%;
+  font-size: 1.5rem;
+  margin: 0rem;
+}
+
+.card-header.card-image {
+  overflow: hidden;
+}
+
+.card-header.card-image>img {
+  display: block;
+  width: 100%;
+  max-height: 300px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  transition: 300ms transform ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 10px 26px 0 rgba(0, 0, 0, 1);
+}
+
+.card:hover>.card-header.card-image>img {
+  transform: scale(1.5);
+}
+
+.card-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: whitesmoke;
+  padding: 0 var(--padding);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-body {
+  font-size: .9rem;
+  padding: 0 var(--padding);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: whitesmoke;
+}
+
+.card-footer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  padding-top: 0;
+}
+
+.btn {
+  background: rebeccapurple;
+  color: whitesmoke;
+  border: none;
+  font-size: 1rem;
+  padding: .5rem .75rem;
+  border-radius: .25em;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #8499B1;
+  color: black;
+}
+
+.btn.btn-outline {
+  background: none;
+  border: 1px solid #8499B1;
+  padding: .45rem;
+}
+
+.btn.btn-outline:hover,
+.btn .btn-outline:focus {
+  background: #8499B1;
+  color: black;
+}
+
+.btn+.btn {
+  margin-left: .25rem;
+}
