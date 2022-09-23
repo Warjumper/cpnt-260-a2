@@ -75,7 +75,7 @@ a {
 .card-heading {
   font-family: 'Playfair Display', serif;
   font-size: 1.2rem;
-  color: whitesmoke;
+  color: white;
   padding: 0 var(--padding);
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -98,7 +98,7 @@ a {
 
 .btn {
   background: rebeccapurple;
-  color: whitesmoke;
+  color: white;
   border: none;
   font-size: 1rem;
   padding: .5rem .75rem;
